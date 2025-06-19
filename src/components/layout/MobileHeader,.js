@@ -365,7 +365,7 @@ function MobileHeader() {
           </div>
         </div>
       </div>
-      <div className="row" style={{background: '#FFFFFF', position: 'fixed', bottom: '0', width: '100%', zIndex: '1000', padding: '10px 0', boxShadow: '0 10px 13px -1px #919191'}}>
+      <div className="row" style={{background: '#FFFFFF', position: 'fixed', bottom: '0', width: '100%', zIndex: '1000', boxShadow: '0 10px 13px -1px #919191'}}>
         <div className="col text-center">
           <Link href=""><Image src={home} alt="Home" className="mobile-footer-icon" /></Link>
         </div>
