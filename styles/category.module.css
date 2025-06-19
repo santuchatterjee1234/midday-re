@@ -1,0 +1,868 @@
+.updatate {
+    display: block;
+    color: #3e3e3e;
+    font-size: 9px;
+    /* margin-top: 10px; */
+    height: auto;
+    /* margin-bottom: 5px; */
+}
+
+.titlenewsheadingbigtitle {
+    font-size: 15px;
+    line-height: 1.25;
+    height: auto !important;
+    font-weight: bold;
+}
+
+.titlenewsheadingsmalltitle {
+    font-size: 15px;
+    line-height: 1.25;
+    height: auto !important;
+}
+
+.lineclamp2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.lineclamp3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 50px !important;
+    margin-bottom: 10px;
+}
+
+.lineclamp4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 49px !important;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    color: #245093;
+    border-left: 4px solid #E50018;
+    padding-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin-left: 15px; */
+}
+
+.navlink {
+    color: #464E5C;
+    background: none;
+    border: none;
+    font-size: 14px;
+    line-height: 17.42px;
+    font-weight: 400;
+    margin: 0px 10px 0px 0px;
+}
+
+.navlink.active {
+    color: #245093;
+    border-bottom: 2px solid red;
+    font-weight: 700;
+}
+
+.mainPera {
+    font-size: 14px;
+    color: #245093;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.btn {
+    width: 73px;
+    height: 21px;
+    border-radius: 5px;
+    background-color: #E50018;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+}
+
+.btnwhite {
+    /* width: 73px; */
+    height: 21px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #DFDFDF;
+    /* margin: 0px 10px; */
+    padding: 0px 5px;
+}
+
+/* BE HARD SECTION */
+.hardbg {
+    background: linear-gradient(90deg, #EAF3FF 0%, #FFE9EA 100%);
+    height: 50px;
+}
+
+.behardtext {
+    color: #3F1A25;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hardbtn {
+    background-color: #E50018;
+    border: none;
+    margin-left: 80px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 10px;
+    border-radius: 5.8px;
+}
+
+.adspart {
+    width: 728px;
+    height: 90px;
+    background: #D9D9D9;
+}
+
+.adspera {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.MumbaiPhotos {
+    background-color: #F0F6FF;
+    margin: 40px 0px;
+    padding: 20px 0px;
+}
+
+.photoshead {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    color: #245093;
+    border-left: 4px solid #E50018;
+    padding-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* OPTION CSS */
+.optionhead {
+    color: #2B2B2B;
+    font-size: 16.46px;
+    font-weight: 700;
+}
+
+.optionpera {
+    color: #636363;
+    font-size: 12.81px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Container for the heading and navigation */
+.photosHeade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation arrows container */
+.swiperNavigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for the navigation arrows */
+.swiperButtonPrev,
+.swiperButtonNext {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #B0B0B0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Apply rotation to both arrows */
+.swiperButtonPrev {
+    transform: rotate(180deg);
+    width: 12px !important;
+    font-size: 12px !important;
+}
+
+.swiperButtonNext {
+    transform: rotate(180deg);
+    color: #0056b3;
+}
+
+/* Change color on hover */
+.swiperButtonPrev:hover,
+.swiperButtonNext:hover {
+    color: #0056b3;
+}
+
+.optionbg {
+    background-color: #E9F2FF;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.tagline {
+    font-size: 12.78px;
+    color: #666666;
+    line-height: 17px;
+    font-weight: 400;
+    padding-top: 3px;
+    margin-bottom: 0px;
+}
+
+.share {
+    width: 20px;
+    height: 20px !important;
+    padding-top: 3px;
+}
+
+.subvideo {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2B2B2B;
+}
+
+.rightSide {
+    background: #FFF2F3;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rightpera {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+.quizepera {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.playnow {
+    padding: 5px 50px;
+    text-align: center;
+    margin: 20px;
+    border: none;
+    background: #AF1055;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.swiperHead {
+    font-weight: 700;
+    color: #000000;
+    font-size: 16.69px;
+    margin-bottom: 0px;
+}
+
+.swiperPera {
+    color: #2755A5;
+    font-weight: 400;
+    font-size: 13.91px;
+    margin-bottom: 0px;
+}
+
+.imgeWidth {
+    width: 57.04px;
+    height: 57.04px !important;
+    margin-top: 10px;
+}
+
+.borderMain {
+    border: 1px solid #CADFFD;
+}
+
+.swiper-button-prev:after {
+    background: red !important;
+}
+
+.pollPera {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* components/Poll.module.css */
+.pollContainer {
+    max-width: 400px;
+}
+
+.pollOption {
+    position: relative;
+    padding-left: 30px;
+}
+
+.pollOption input[type="radio"] {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pollOption .progress-bar {
+    height: 5px;
+}
+
+.selected {
+    border: 2px solid #007bff;
+}
+
+.progressheadpera {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.progresspercent {
+    color: #245093;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* CustomRadio.module.css */
+.custom-radio input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"]:checked {
+    background-color: rgb(36, 83, 167);
+    /* Custom RGB or use Bootstrap's bg-primary */
+    border-color: rgb(36, 83, 167);
+    /* Custom RGB or use Bootstrap's bg-primary */
+}
+
+.custom-radio input[type="radio"]::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.15s ease-in-out;
+}
+
+.custom-radio input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+    background-color: red;
+}
+
+/* LIVE BLOG CSS */
+.liveblog {
+    color: #245093;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.liveBlogbg {
+    background-color: #F8F8F8;
+    padding-bottom: 30px;
+}
+
+.blogPera {
+    font-size: 14px;
+    color: #2B2B2B;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    /* height: 150px; */
+}
+
+.dating {
+    font-size: 12px;
+    color: #6C757D;
+    font-weight: 400;
+}
+
+.catagoryIcon2 {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e21b22;
+    box-shadow: 0 0 10px #e21b22, inset 0 0 10px #e21b22;
+    border-radius: 50%;
+    /* Use 50% for perfect circle */
+    background-color: #e21b22;
+    animation: blink-animation 1s infinite;
+    margin-right: 10px;
+}
+
+/* Define the blink animation */
+@keyframes blink-animation {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.catagoryIconslide {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e21b22;
+    box-shadow: 0 0 10px #e21b22, inset 0 0 10px #e21b22;
+    border-radius: 50%;
+    /* Use 50% for perfect circle */
+    background-color: #e21b22;
+    animation: blink-animation 1s infinite;
+    /* margin-right: 10px; */
+}
+
+/* Define the blink animation */
+@keyframes blink-animation {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.borderrightSide {
+    border-top: 3px solid #BBBBBB;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-style: dotted;
+    /* height: 20px; */
+    width: 110%;
+    position: absolute;
+    top: 5px;
+    left: 24px;
+    margin-bottom: 12px;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .behardtext {
+        font-size: 16px;
+    }
+
+    .hardbtn {
+        margin-left: 50px;
+        padding: 10px 6px;
+    }
+
+    .borderMain {
+        width: 100%;
+    }
+}
+
+/* CATAGORY PAGE Entertainmanet CSS */
+.spotligtbg {
+    background: #FFF5FF;
+}
+
+.entheadpera {
+    color: #245093;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+}
+
+.entmainpera {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+/* Upcoming Events */
+.eventhead {
+    color: #AF1055;
+    font-size: 15.09px;
+    line-height: 20.52px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.eventfinal {
+    font-weight: 400;
+    color: #666666;
+    font-size: 12.93px;
+    margin-bottom: 5px;
+}
+
+.evenetcheck {
+    color: #2755A5;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 0px;
+
+}
+
+.eventspan {
+    color: #464E5C;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.borderleft {
+    border-left: 3px solid #AF1055 !important;
+    border: 1px solid #D5D5D5;
+    margin-bottom: 10px;
+}
+
+.events {
+    height: 267px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+}
+
+/* Scrollbar styling */
+.events::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.events::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background color of the track */
+    border-radius: 10px;
+    /* Round the track corners */
+}
+
+.events::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Round the thumb corners */
+    border: 2px solid #f1f1f1;
+    /* Optional: adds padding around the thumb */
+}
+
+.events::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color when hovering over the scrollbar thumb */
+}
+
+/* SUNDAY MIDDAY PAGE */
+.sundaypera {
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.thirdlayoutbg {
+    background: #E9F2FF;
+}
+
+.mainpart {
+    background-color: #FBF3EC;
+}
+
+/* horoscope css Start */
+.roundedcircle {
+    border-radius: 50% !important;
+}
+
+.astrologistname {
+    position: absolute;
+    top: 4px;
+    left: 45px;
+}
+
+.dflexct {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.uidatepickertrigger {
+    width: 15px !important;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.calendarct {
+    width: 15px !important;
+    margin: 0 5px;
+    position: relative;
+    left: 88px;
+}
+
+.colorpurpulelight {
+    color: #af1055 !important;
+    background: transparent;
+}
+
+.sbold {
+    font-weight: 700;
+}
+
+.downbottom {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.titlenewsheading {
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.fontsize10 {
+    font-size: 10px;
+}
+
+.categoryquizepera {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.categoryplaynow {
+    padding: 5px 50px;
+    text-align: center;
+    margin: 20px;
+    border: none;
+    background: #af1055;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1281px) {
+    .borderright {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .categoryrightborderdesktop {
+        border-right: 1px solid #AAAAAA;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .dflexct {
+        position: relative;
+        right: 40%;
+        margin-bottom: 15px;
+    }
+}
+
+/* horoscope css End */
+/* LIFE STYLE PAGE */
+.fashionhead {
+    color: #245093;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.fashionheadsemi {
+    color: #245093;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.lifestyle {
+    font-weight: 400;
+    color: #2B2B2B;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.unsungpera {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.unsungImage {
+    border-radius: 50px;
+}
+
+.perabyhealth {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2B2B2B;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* BY SHADAB */
+.imgstorylabelposition {
+    background: #e5001a;
+    color: #fff;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 3px 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.camerapositionbig {
+    max-width: 8%;
+    position: absolute;
+    right: 2%;
+    bottom: 26%;
+}
+
+.links {
+    width: 100%;
+    padding: 0px;
+    margin: 0px 7px;
+}
+
+.storylabel {
+    background: #e5001a;
+    color: #fff;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 3px 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    border-radius: 0px 0px 0px 5px;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .imgstorylabelposition {
+        background: #e5001a;
+        color: #fff;
+        font-size: 11px;
+        line-height: 14px;
+        padding: 3px 10px;
+        display: inline-block;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        border-radius: 0px 0px 0px 5px;
+    }
+
+    .camerapositionbig {
+        max-width: 8%;
+        position: absolute;
+        right: 2%;
+        /* bottom: 15%; */
+    }
+
+    .btnwhite {
+        height: auto;
+        border-radius: 5px !important;
+        background-color: #FFFFFF !important;
+        color: #000000 !important;
+        font-size: 11px !important;
+        font-weight: 700 !important;
+        border: 1px solid #464E5C !important;
+        padding: 2px 7px;
+        width: auto;
+        margin: 0px;
+    }
+
+    .links {
+        width: 85%;
+    }
+
+    .storylabel {
+        background: #e5001a;
+        color: #fff;
+        font-size: 11px;
+        line-height: 14px;
+        padding: 3px 10px;
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        border-radius: 0px 0px 0px 5px;
+    }
+
+    .MumbaiPhotos {
+        background-color: #F0F6FF;
+        margin: 0px;
+        padding: 20px 0px;
+    }
+}
+
+.mainbg {
+    background: #FFF5FF;
+}

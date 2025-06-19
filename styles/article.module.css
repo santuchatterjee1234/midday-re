@@ -1,0 +1,810 @@
+.main {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #2B2B2B;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #626262;
+    margin-top: 10px;
+}
+
+.articlemainrightborderdesktop {
+    border-right: 1px solid #AAAAAA;
+    height: auto;
+    position: relative;
+}
+
+.discripttion {
+    color: #464646;
+    font-size: 16px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.discriptpera {
+    background: #F9F9F9;
+    color: #464646;
+    font-style: italic;
+    font-size: 15px;
+    padding: 24px 30px 4px 30px;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px; */
+    position: relative;
+}
+
+.discriptpera::before {
+    position: absolute;
+    content: " ";
+    height: 40px;
+    width: 3px;
+    background: #EE1D23;
+    left: 19px;
+    top: 28px;
+}
+
+.card {
+    -webkit-box-shadow: -1px 0px 14px 0px rgba(128, 128, 128, 0.6);
+    -moz-box-shadow: -1px 0px 14px 0px rgba(128, 128, 128, 0.6);
+    box-shadow: -1px 0px 14px 0px rgba(128, 128, 128, 0.6);
+}
+
+.text {
+    color: #212529;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+
+.faPlay {
+    color: #0156a5;
+    border: 3px solid #0156a5;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.borderMain {
+    border: 1px solid #CADFFD;
+}
+
+.pollPera {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.progressheadpera {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.progresspercent {
+    color: #245093;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.stickysidebar {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 20px;
+    /* Adjust as needed */
+}
+
+.summarymain {
+    background-color: #c7e4da;
+}
+
+.bordermian {
+    border-bottom: 1px solid #dfa986;
+}
+
+.speech {
+    font-size: 16px;
+    color: #464646;
+    line-height: 21.76px;
+}
+
+.bigadspart {
+    width: 640px;
+    height: 360px;
+    background: #D9D9D9;
+}
+
+.adspera {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.adspart {
+    width: 728px;
+    height: 90px;
+    background: #D9D9D9;
+}
+
+.toppick {
+    color: #E5001A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.toppickbg {
+    background: #E8F1FF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.imagemain {
+    width: 113.42px;
+    height: 69.19px;
+}
+
+.toppicpera {
+    color: #2755A5;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0px;
+}
+
+.topdesc {
+    color: #666666;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.32px;
+}
+
+.spanhead {
+    font-size: 16px;
+    color: #2B2B2B;
+    font-weight: 700;
+}
+
+.wahtsappchanel {
+    color: #2755A5;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.descpmain {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.trending {
+    color: #464E5C;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #DFDFDF;
+    padding: 5px;
+    margin: 0px 5px 5px 0px;
+}
+
+.clickhere {
+    color: #2755A5;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: italic;
+    border-bottom: 1px solid #2755A5;
+}
+
+.photosHeade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.photoshead {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    color: #245093;
+    border-left: 4px solid #E50018;
+    padding-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.optionhead {
+    color: #2B2B2B;
+    font-size: 16.46px;
+    font-weight: 700;
+}
+
+.optionpera {
+    color: #636363;
+    font-size: 12.81px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Container for the heading and navigation */
+.photosHeade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation arrows container */
+.swiperNavigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for the navigation arrows */
+.swiperButtonPrev,
+.swiperButtonNext {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #B0B0B0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Apply rotation to both arrows */
+.swiperButtonPrev {
+    transform: rotate(180deg);
+    width: 12px !important;
+    font-size: 12px !important;
+}
+
+.swiperButtonNext {
+    transform: rotate(180deg);
+    color: #0056b3;
+}
+
+/* Change color on hover */
+.swiperButtonPrev:hover,
+.swiperButtonNext:hover {
+    color: #0056b3;
+}
+
+.optionbg {
+    background-color: #E9F2FF;
+    padding-top: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.tagline {
+    font-size: 12.78px;
+    color: #666666;
+    line-height: 17px;
+    font-weight: 400;
+    padding-top: 3px;
+    margin-bottom: 0px;
+}
+
+.share {
+    width: 20px;
+    height: 20px !important;
+    padding-top: 3px;
+}
+
+.subvideo {
+    font-weight: 400;
+    font-size: 15px;
+    color: #2B2B2B;
+}
+
+.rightSide {
+    background: #FFF2F3;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.rightpera {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+.quizepera {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.playnow {
+    padding: 5px 50px;
+    text-align: center;
+    margin: 20px;
+    border: none;
+    background: #AF1055;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.swiperHead {
+    font-weight: 700;
+    color: #000000;
+    font-size: 16.69px;
+    margin-bottom: 0px;
+}
+
+.swiperPera {
+    color: #2755A5;
+    font-weight: 400;
+    font-size: 13.91px;
+    margin-bottom: 0px;
+}
+
+.imgeWidth {
+    width: 57.04px;
+    height: 57.04px !important;
+    margin-top: 10px;
+}
+
+.borderMain {
+    border: 1px solid #CADFFD;
+}
+
+.titlenewsheadingbigtitle {
+    font-size: 15px;
+    line-height: 1.25;
+    height: auto !important;
+    font-weight: bold;
+}
+
+.titlenewsheadingsmalltitle {
+    font-size: 15px;
+    line-height: 1.25;
+    height: auto !important;
+}
+
+/* Initial non-sticky style */
+.stickySection {
+    position: relative;
+}
+
+/* Sticky style when the class is added */
+.sticky {
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    width: 300px;
+}
+
+/* Poll and Advertisement Styling */
+/* .pollSection {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.advertisementSection {
+    background-color: white;
+    padding: 10px;
+} */
+.swiperHeadnew {
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.summary {
+    background: #c7e4da;
+}
+
+.borderbottom {
+    border-bottom: 1px solid #dcb192;
+    font-weight: bold;
+}
+
+.fonts {
+    font-weight: 700;
+    color: #000000;
+    list-style: disc;
+    padding-bottom: 20px;
+}
+
+.startimge {
+    padding-right: 5px;
+}
+
+.genrated {
+    background-color: #000;
+    color: #FFF;
+}
+
+.alsobg {
+    background-color: #E9F2FF;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 768px) {
+    .main {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /* .articlemainrightborderdesktop {
+        display: none;
+    } */
+    .date {
+        font-size: 10px;
+    }
+
+    /* .articlelhs ul li {
+        pa
+     } */
+    .articlemainrightborderdesktop {
+        border-right: none;
+    }
+
+    .bigadspart {
+        width: 322.58px;
+        height: 182.26px;
+    }
+
+    .wahtsappimg {
+        padding-top: 10px;
+    }
+
+    .wahtsappchanel {
+        font-size: 13px;
+    }
+
+    .startimgenew {
+        width: 20px;
+        height: 20px;
+        margin: 0px 7px;
+    }
+
+    .startimgefollowus {
+        height: 21px;
+        width: 73.5px;
+    }
+
+    .mainshare {
+        display: block !important;
+    }
+
+    .boxpera {
+        font-size: 23px !important;
+        /* font-weight: 700; */
+        line-height: 27.8px;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    .secondboxpera {
+        font-size: 22px !important;
+    }
+
+    .membershiptext {
+        font-size: 15px !important;
+    }
+
+    .starting {
+        padding: 0px !important;
+    }
+}
+
+/* SocialButtons.module.css */
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+.sbuttons {
+    bottom: 5%;
+    position: fixed;
+    margin: 1em;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sbutton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
+    box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+    position: relative;
+}
+
+.sbutton>i {
+    font-size: 38px;
+    line-height: 60px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sbutton:active,
+.sbutton:focus,
+.sbutton:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+/* Tooltip styles using data-tooltip */
+.sbutton[data-tooltip]:before {
+    font-family: 'Roboto';
+    font-weight: 600;
+    border-radius: 2px;
+    background-color: #585858;
+    color: #fff;
+    content: attr(data-tooltip);
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px 7px;
+    margin-left: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.sbutton[data-tooltip]:hover:before,
+.sbutton[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sbutton.mainsbutton {
+    background: #2ab1ce;
+}
+
+.sbutton.pinteres {
+    background: #e60023;
+}
+
+.sbutton.twitt {
+    background: #03a9f4;
+}
+
+.sbutton.fb {
+    background: #3f51b5;
+}
+
+.sbutton.whatsapp {
+    background: #00e676;
+}
+
+.tooltipWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 150px;
+    background-color: #0055a5;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 4px;
+
+    /* Positioning the tooltip */
+    position: absolute;
+    bottom: 125%;
+    /* Adjust the distance between the image and tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Hide initially */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    /* Tooltip arrow */
+    z-index: 1;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0055a5 transparent transparent transparent;
+}
+
+/* Show the tooltip on hover */
+.tooltipWrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.redBackground {
+    background-color: red;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fixedShareIcon {
+    position: fixed;
+    bottom: 45%;
+    right: 10px;
+    z-index: 1000;
+}
+
+.socialIcons {
+    position: absolute;
+    top: 62px;
+    right: -2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hiddenIcons {
+    display: none;
+}
+
+.shareIcon {
+    background: #0066b1;
+    font-size: 20px;
+    border-radius: 31px;
+    width: 50px;
+    height: 50px;
+    padding: 11px 16px;
+    margin: 11px 0px;
+    color: #fff;
+}
+
+.mainshare {
+    display: none;
+}
+
+.sharefull {
+    background: #0066b1;
+    width: 55px;
+    padding: 0px 3px;
+    border-radius: 42px;
+}
+
+.premiumsectionpera {
+    font-size: 16px;
+    color: #303030;
+    line-height: 21.76px;
+    font-weight: 400;
+    background: -webkit-linear-gradient(#333, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.premiumbox {
+    background-color: #fffaed;
+    border: 1px solid #CDA03A;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.boxpera {
+    font-size: 29px;
+    /* font-weight: 700; */
+    line-height: 27.8px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.secondboxpera {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.8px;
+    color: #CDA03A;
+    text-align: center;
+}
+
+.prebutton {
+    background-color: #E50018;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 7px 40px;
+    margin-bottom: 7px;
+}
+
+.starting {
+    font-size: 13px;
+    padding-top: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: #245093;
+    margin: 3px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.secondmainspan {
+    font-size: 13px;
+    padding-top: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: #245093;
+    margin: 3px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.secondmain {
+    padding-top: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.membershiptext {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.middygold {
+    color: #CDA03A;
+}
+
+.membershiptextsecond {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.textprimry {
+    color: #245093;
+}
+
+.premiumtopbutton {
+    background: #CDA03A;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+}

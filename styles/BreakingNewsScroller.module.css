@@ -1,0 +1,124 @@
+.scrollerpadding {
+    /* background: rgb(244, 248, 255); */
+    background: #FFFFFF;
+    padding: 0px 130px;
+}
+
+.scrollerpadding {
+    /* background: rgb(244, 248, 255); */
+    background: #FFFFFF;
+    padding: 0px 140px;
+    border-top: 1px dotted #BFBFBF;
+    border-bottom: 1px dotted #BFBFBF;
+}
+
+.scrollerContainer {
+    display: flex;
+    align-items: center;
+    /* background-color: #f4f8ff; */
+    background: #FFFFFF;
+    /* Light blue background */
+    overflow: hidden;
+    position: relative;
+    /* Ensures proper layout for fixed label */
+}
+
+.label {
+    background-color: #FFE6E6;
+    color: #eb3f4f;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 11%;
+    /* white-space: nowrap;
+    position: absolute;
+    left: 10px; */
+    z-index: 0000;
+    text-align: center;
+    font-size: 14px;
+}
+
+.scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    /* margin-left: 130px; */
+    /* Ensure it doesn't overlap with the label */
+    width: calc(100% - 130px);
+}
+
+.scrollContent {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+    animation: scroll linear infinite;
+    color: #000000 !important;
+    /* Infinite scrolling animation */
+}
+
+.scrollContent.paused {
+    animation-play-state: paused;
+    /* Pause animation when this class is applied */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.trendingImg {
+    width: 15px;
+}
+
+.newsItem {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.newsItem:hover {
+    color: #1e56a0;
+    /* Change color on hover */
+    text-decoration: underline;
+}
+
+.dot {
+    color: red;
+    font-size: 40px;
+    /* Set dot size */
+    margin-right: 4px;
+    /* Adds space between dot and news text */
+    vertical-align: middle;
+    /* Center-align with text */
+}
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 13px;
+        padding: 4px;
+        width: 25%;
+        border-radius: 3px;
+    }
+
+    .scroller {
+        margin-left: 5px;
+        width: calc(100% - 115px);
+    }
+
+    .scrollerpadding {
+        padding: 0px 0px 0px 15px;
+        border-top: 2px dotted #BFBFBF;
+        border-bottom: 2px dotted #BFBFBF;
+    }
+
+    .newsItem {
+        font-size: 12px;
+    }
+}
