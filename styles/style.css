@@ -1,7 +1,7 @@
   /*! CSS Used from: https://www.mid-day.com/assets/css/bootstrap.min.css?v=1.0 */
 
   /* ADS CODE */
-   .rw_left_sticky {
+  .rw_left_sticky {
     position: fixed;
     top: 5px;
     z-index: 99999;
@@ -19,7 +19,7 @@
     height: 600px;
     background-color: red;
     right: 0px;
-  } 
+  }
 
   @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
@@ -234,10 +234,12 @@
     text-align: center;
     font-size: 18px;
   }
-  .subscribe-position{
+
+  .subscribe-position {
     position: relative;
     right: 18px;
   }
+
   .border-right {
     border-right: 1px solid #dee2e6 !important;
   }
@@ -467,8 +469,9 @@
     .socialIconRhs {
       float: right !important;
     }
-    .mobile-footer-icon{
-      height:60px !important;
+
+    .mobile-footer-icon {
+      height: 60px !important;
     }
   }
 
@@ -727,17 +730,14 @@
 
     #menuToggle input {
       display: block;
-      width: 40px;
-      height: 32px;
+      width: 62px;
+      height: 49px;
       position: absolute;
       cursor: pointer;
       opacity: 0;
-      /* hide this */
-      z-index: 2;
-      /* and place it over the hamburger */
-      /* -webkit-touch-callout: none;
-      margin-top: -31px;
-      margin-left: 10px; */
+      z-index: 12356;
+      top: -28px;
+      left: 13px;
     }
 
     /*
