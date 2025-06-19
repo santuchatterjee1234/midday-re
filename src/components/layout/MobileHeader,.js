@@ -311,7 +311,9 @@ function MobileHeader() {
                         <div className="never-miss-headline">
                           <p>Never Miss a Headline!</p>
                         </div>
-                        <button class="subscribenow-btn">Subscribe Now</button>
+                        <div className="text-center">
+                          <button class="subscribenow-btn">Subscribe Now</button>
+                        </div>
                       </div>
                     </div>
                   </div>
