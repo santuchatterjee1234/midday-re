@@ -2773,4 +2773,7 @@
       text-decoration: none;
       color: inherit;
     }
+    .social-icons-inline.inline-menu li{
+      padding: 0px !important;
+    }
   }
