@@ -25,11 +25,11 @@ import searchMobile from "../../../public/assets/images/search-mobile.png";
 import UserMobile from "../../../public/assets/images/user-mobile.png";
 import maps from '../../../public/assets/images/maps-icon.png';
 import microphone from '../../../public/assets/images/microphone-icon.png';
-import home from '../../../public/assets/images/home-icon.png';
-import photos from '../../../public/assets/images/photos-icon.png';
-import epaper from '../../../public/assets/images/e-paper-icon.png';
-import video from '../../../public/assets/images/video-icon.png';
-import shots from '../../../public/assets/images/shots-icon.png';
+import home from "../../../public/assets/images/home-icon.png";
+import photos from "../../../public/assets/images/photos-icon.png";
+import epaper from "../../../public/assets/images/e-paper-icon.png";
+import video from "../../../public/assets/images/videos-icon.png";
+import shots from "../../../public/assets/images/shots-icon.png";
 import sun from '../../../public/assets/images/sun-icon.png';
 
 function MobileHeader() {
