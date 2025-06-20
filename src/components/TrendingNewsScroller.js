@@ -18,7 +18,7 @@ const TrendingNewsScroller = () => {
       <div className={styles.scrollerContainer}>
         <div className={styles.label}>Trending <Image src={trendUp} alt="Trending" className={styles.trendingImg}/></div>
         <div className={styles.scroller}>
-          <div className={styles.scrollContent}>
+          <div className={`${styles.scrollContent} ps-1 pe-2 ps-md-0 pe-md-0`}>
             {/* Display the news items statically with the last item having no border-right */}
             {newsItems.map((news, index) => (
               <a
