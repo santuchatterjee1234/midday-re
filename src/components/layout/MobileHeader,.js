@@ -229,14 +229,14 @@ function MobileHeader() {
                       </div>
                     </div>
                   </div>
-                  <div className="row py-2 px-3 justify-content-center border-bottom">
-                    <div className="col-3 text-center">
+                  <div className="row py-2 px-5 justify-content-center border-bottom">
+                    <div className="col text-center">
                       <Link href="" style={{ fontSize: '12px', color: '#14263D !important', textDecoration: 'underline !important' }}>Mid-day Gujarati</Link>
                     </div>
-                    <div className="col-3 text-center">
+                    <div className="col text-center">
                       <Link href="" style={{ fontSize: '12px', color: '#14263D !important', textDecoration: 'underline !important' }}>Inquilab</Link>
                     </div>
-                    <div className="col-3 text-center">
+                    <div className="col text-center">
                       <Link href="" style={{ fontSize: '12px', color: '#14263D !important', textDecoration: 'underline !important' }}>Mid-day Hindi</Link>
                     </div>
                   </div>
