@@ -822,7 +822,7 @@
     */
     #menu.open {
       transform: none;
-      top: 0px;
+      top: 1px;
       position: relative;
       box-shadow: 0 10px 13px -1px #919191;
       padding-bottom: 60px;
@@ -2291,6 +2291,10 @@
       background: #D3D3D3;
       display: inline-block;
       margin-top: 5px;
+    }
+
+    .mobile-border-bottom-pos{
+      border-bottom: 2px dotted #BFBFBF;
     }
 
   }

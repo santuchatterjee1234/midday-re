@@ -8,8 +8,8 @@
     /* background: rgb(244, 248, 255); */
     background: #FFFFFF;
     padding: 0px 140px;
-    border-top: 1px dotted #BFBFBF;
-    border-bottom: 1px dotted #BFBFBF;
+    border-top: 2px dotted #BFBFBF;
+    border-bottom: 2px dotted #BFBFBF;
 }
 
 .scrollerContainer {
@@ -114,8 +114,6 @@
 
     .scrollerpadding {
         padding: 0px 0px 0px 15px;
-        border-top: 2px dotted #BFBFBF;
-        border-bottom: 2px dotted #BFBFBF;
     }
 
     .newsItem {

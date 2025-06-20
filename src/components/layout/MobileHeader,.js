@@ -30,6 +30,7 @@ import photos from '../../../public/assets/images/photos-icon.png';
 import epaper from '../../../public/assets/images/e-paper-icon.png';
 import video from '../../../public/assets/images/video-icon.png';
 import shots from '../../../public/assets/images/shots-icon.png';
+import sun from '../../../public/assets/images/sun-icon.png';
 
 function MobileHeader() {
   const [menuData, setMenuData] = useState([]);
@@ -211,19 +212,19 @@ function MobileHeader() {
                 <span></span>
                 <span></span>
                 <ul id="menu" className={menuOpen ? "open px-0 px-3" : ""}>
-                  <div className="row py-2 px-3">
-                    <div className="col-6 px-4">
+                  <div className="row py-2 px-3 mobile-border-bottom-pos">
+                    <div className="col-6 px-4" style={{paddingTop: '7px'}}>
                       <span className="date-time-day">Monday, 13 Jan 2025<br /></span>
                     </div>
                     <div className="col-6">
                       <div className="weather-widget d-flex align-items-center" style={{ marginTop: '1px' }}>
                         <div className="location d-flex align-items-center">
-                          <Image src={maps} alt="Location" className="me-2" style={{ width: '12px', position: 'relative', top: '2px' }} />
+                          <Image src={maps} alt="Location" className="me-2" style={{ width: '15px', position: 'relative', top: '2px' }} />
                           <span className="me-2" style={{ fontSize: '14px', left: '-4px !important', top: '-4px !important', color: '#595959', background: '#FFFFFF' }}>{weather ? weather.name : "Mumbai"}</span>
                         </div>
                         <div className="weather-info d-flex align-items-center">
-                          <FontAwesomeIcon icon={faSun} style={{ marginRight: '10px', marginLeft: '20px', color: '#595959', fontSize: '14px', position: 'relative', top: '3px' }} />
-                          <span style={{ fontSize: '14px', left: '0px !important', top: '-3px !important', color: '#595959', background: '#FFFFFF' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
+                          <Image src={sun} alt="Weather Icon" className="me-2" style={{ width: '30px', position: 'relative', left: '12px', top: '3px' }} />
+                          <span style={{ fontSize: '18px', left: '10px !important', top: '-7px !important', color: '#595959', background: '#FFFFFF', fontWeight: 'bold' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
                         </div>
                       </div>
                     </div>

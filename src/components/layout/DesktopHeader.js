@@ -11,6 +11,7 @@ import microphone from '../../../public/assets/images/microphone-icon.png';
 import shorts from '../../../public/assets/images/shorts-icon.png';
 import notification from '../../../public/assets/images/notification-icon.png';
 import userIcon from '../../../public/assets/images/users-icon.png';
+import sun from '../../../public/assets/images/sun-icon.png';
 
 const DesktopHeader = () => {
   const [menuData, setMenuData] = useState([]);
@@ -224,8 +225,8 @@ const DesktopHeader = () => {
                         <span className="me-2" style={{ fontSize: '18px', color: '#595959' }}>{weather ? weather.name : "Mumbai"}</span>
                       </div>
                       <div className="weather-info d-flex align-items-center">
-                        <FontAwesomeIcon icon={faSun} style={{ marginRight: '5px', color: '#595959', fontSize: '18px' }} />
-                        <span style={{ fontSize: '16px', color: '#595959' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
+                        <Image src={sun} alt="Weather Icon" className="me-2" style={{ width: '30px' }} />
+                        <span style={{ fontSize: '21px', color: '#595959', fontWeight: 'bold' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
                       </div>
                     </div>
                   </div>
