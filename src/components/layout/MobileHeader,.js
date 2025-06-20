@@ -179,9 +179,7 @@ function MobileHeader() {
                   {/* Dropdown menu */}
                   {isSearchDropdownVisible && (
                     <div className="search-dropdown search-dropdown-position">
-                      <ul style={{ listStyleType: 'none', margin: '0', padding: '0', overflowY: 'auto', border: 'none' }}>
-                        <li style={{ padding: '10px', cursor: 'pointer' }}>Search Result 1</li>
-                      </ul>
+                     
                     </div>
                   )}
                 </div>
