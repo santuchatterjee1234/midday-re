@@ -87,6 +87,21 @@ function MobileHeader() {
     setActiveItem(router.pathname);
   }, [router.pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('.mobile-sticky');
+      if (window.scrollY > 10) {
+        header?.classList.add('scrolled');
+      } else {
+        header?.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -116,7 +131,13 @@ function MobileHeader() {
 
   return (
     <div className="container d-block d-md-none">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="top-mobile-add"></div>
+        </div>
+      </div>
       <div className="mobile-sticky">
+
         <div className="row pt-2">
           <div className="col-5 logo-pos">
             <Link href="/">
@@ -145,13 +166,13 @@ function MobileHeader() {
         </div>
         {/* Dropdown for search icon */}
         {activeDropdown === "search" && (
-          <div className="custom-dropdown px-2" style={{overflowX: 'hidden'}}>
+          <div className="custom-dropdown px-2" style={{ overflowX: 'hidden' }}>
             <div className="row px-3">
-              <div className="col-12" style={{background: '#F6F6F6', border: '1px solid #DFDFDF', padding: '10px'}}>
+              <div className="col-12" style={{ background: '#F6F6F6', border: '1px solid #DFDFDF', padding: '10px' }}>
                 <div className="search-section d-flex align-items-center" onClick={toggleSearchDropdown} style={{ position: 'relative' }}>
                   <FontAwesomeIcon icon={faSearch} className="mr-2 text-muted" />
                   <input type="text" className="border-0 shadow-none" placeholder="Search here" style={{ background: '#F6F6F6', width: '100%' }} />
-                  <div> 
+                  <div>
                     <Image src={microphone} alt="Microphone" className="ml-2" style={{ width: '15px' }} />
                   </div>
                   {/* Dropdown menu */}
@@ -190,7 +211,7 @@ function MobileHeader() {
                 <span></span>
                 <span></span>
                 <ul id="menu" className={menuOpen ? "open px-0 px-3" : ""}>
-                  <div className="row py-2 px-3" style={{ borderBottom: "2px dotted #BFBFBF" }}>
+                  <div className="row py-2 px-3">
                     <div className="col-6 px-4">
                       <span className="date-time-day">Monday, 13 Jan 2025<br /></span>
                     </div>
@@ -365,7 +386,7 @@ function MobileHeader() {
           </div>
         </div>
       </div>
-      <div className="row" style={{background: '#FFFFFF', position: 'fixed', bottom: '0', width: '100%', zIndex: '1000', boxShadow: '0 10px 13px -1px #919191'}}>
+      <div className="row" style={{ background: '#FFFFFF', position: 'fixed', bottom: '0', width: '100%', zIndex: '1000', boxShadow: '0 10px 13px -1px #919191' }}>
         <div className="col text-center">
           <Link href=""><Image src={home} alt="Home" className="mobile-footer-icon" /></Link>
         </div>

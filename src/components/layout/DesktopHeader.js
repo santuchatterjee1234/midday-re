@@ -131,7 +131,7 @@ const DesktopHeader = () => {
               <div className="col-3 px-md-3">
                 <div className="search-section d-flex align-items-center border-bottom" onClick={toggleSearchDropdown} style={{ position: 'relative' }}>
                   <FontAwesomeIcon icon={faSearch} className="mr-2 text-muted" />
-                  <input type="text" className="border-0 shadow-none" placeholder="Search here" style={{ background: '#F6F6F6' }} />
+                  <input type="text" className="border-0 shadow-none" placeholder="Search" style={{ background: '#F6F6F6', marginLeft: '5px' }} />
                   <Image src={microphone} alt="Microphone" className="ml-2" style={{ width: '12px', position: 'relative', left: '22px' }} />
                   {/* Dropdown menu */}
                   {isSearchDropdownVisible && (
@@ -309,7 +309,9 @@ const DesktopHeader = () => {
           </div>
         </div>
       </div>
-      <TrendingNews/>
+      <div className="d-none d-md-block">
+        <TrendingNews/>
+      </div>
     </div>
   );
 };
