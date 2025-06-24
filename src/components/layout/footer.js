@@ -10,7 +10,7 @@ import android from "../../../public/assets/images/android-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="footer-main mb-5 pb-5 mb-md-0 pb-md-0">
+    <footer className="footer-main mb-3 pb-5 mb-md-0 pb-md-0">
       <div className="container">
         <div className="footer-container">
           {/* Left Section */}

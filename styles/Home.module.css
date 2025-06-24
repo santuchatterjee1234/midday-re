@@ -5,66 +5,80 @@
     font-weight: bold;
     color: #2B2B2B;
 }
+
 .titlenewsheadingsmalltitle {
     font-size: 15px;
     line-height: 1.25;
     height: auto;
     color: #2B2B2B
 }
-.opinionimg{
+
+.opinionimg {
     width: 100% !important;
     height: 50px !important;
     border-radius: 5px;
 }
-.opinionmaintitle{
+
+.opinionmaintitle {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 1px;
     text-align: center;
 }
-.opinionborderpos{
+
+.opinionborderpos {
     border: 1px solid #CADFFD !important;
     border-radius: 5px;
     position: relative;
     width: 100%;
 }
-.opinionmainname{
+
+.opinionmainname {
     font-size: 9px;
     margin-bottom: 0px;
     color: #0055A5;
     text-align: center;
 }
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: var(--swiper-pagination-bottom, 0px);
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%;
 }
-.lineclamp2{
+
+.lineclamp2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.lineclamp3{
+.lineclamp3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.readmore{
+
+.readmore {
     text-align: right;
     color: #0055A5;
     margin-top: -10px
 }
-.readmore:hover{
+
+.readmore:hover {
     text-decoration: underline;
 }
-.funzonebackground{
+
+.funzonebackground {
     background: #4FCB8F;
 }
-.funzonetitle{
+
+.funzonetitle {
     font-size: 30px;
     font-weight: 700;
     color: #FFFFFF;
@@ -73,26 +87,30 @@
     top: -4px;
     margin-bottom: 0px;
 }
-.takeabreak{
+
+.takeabreak {
     font-size: 22px;
     font-weight: 700;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 0px;
 }
-.buttonposition{
+
+.buttonposition {
     background: #FFFFFF;
     border-radius: 5px;
     border: none;
     padding: 2px 30px;
 }
-.categoryquizepera{
+
+.categoryquizepera {
     font-size: 20px;
     color: #000;
     font-weight: 700;
     margin-bottom: 0;
     text-align: center;
 }
+
 .categoryplaynow {
     padding: 5px 50px;
     text-align: center;
@@ -102,18 +120,21 @@
     color: #fff;
     font-weight: 700;
 }
-.lineclamp5{
+
+.lineclamp5 {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.lineclamp10{
+
+.lineclamp10 {
     display: -webkit-box;
     -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 /* LIVE BLOG CSS */
 .liveblog {
     color: #245093;
@@ -124,16 +145,18 @@
 }
 
 .liveBlogbg {
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
     padding-bottom: 30px;
 }
 
 .blogPera {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 15px;
     color: #2B2B2B;
     font-weight: 400;
     margin-bottom: 0px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 8px;
 }
 
 .dating {
@@ -141,8 +164,10 @@
     color: #6C757D;
     font-weight: 400;
 }
+
 .catagoryIcon2 {
-    position: relative; /* Ensure the pseudo-elements are positioned relative to this element */
+    position: relative;
+    /* Ensure the pseudo-elements are positioned relative to this element */
     top: -3px !important;
     background: red;
     width: 5px;
@@ -153,7 +178,8 @@
     border-radius: 50%;
 }
 
-.catagoryIcon2:before, .catagoryIcon2:after {
+.catagoryIcon2:before,
+.catagoryIcon2:after {
     content: "";
     position: absolute;
     opacity: 0;
@@ -164,7 +190,8 @@
     height: 12px;
     border: 2px solid #e21b22;
     box-shadow: 0 0 10px #e21b22, inset 0 0 10px #e21b22;
-    border-radius: 50%; /* Use 50% for a perfect circle */
+    border-radius: 50%;
+    /* Use 50% for a perfect circle */
     background-clip: padding-box;
     animation: blinker 2s ease-in-out infinite;
     z-index: -1;
@@ -176,15 +203,18 @@
         transform: scale(0);
         opacity: 0;
     }
+
     50% {
         transform: scale(0.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
 }
+
 .catagoryIconslide {
     position: relative;
     top: -4px !important;
@@ -198,7 +228,8 @@
     z-index: 1;
 }
 
-.catagoryIconslide:before, .catagoryIconslide:after {
+.catagoryIconslide:before,
+.catagoryIconslide:after {
     content: "";
     position: absolute;
     opacity: 0;
@@ -214,12 +245,14 @@
     animation: blinker 2s ease-in-out infinite;
     z-index: 2;
 }
-.liveblogtextpos{
+
+.liveblogtextpos {
     position: absolute;
     top: -8px;
     left: 14px;
 }
-.liveblogheight{
+
+.liveblogheight {
     height: 105px;
 }
 
@@ -229,70 +262,124 @@
         transform: scale(0);
         opacity: 0;
     }
+
     50% {
         transform: scale(0.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(1);
         opacity: 0;
     }
 }
-.horoscopelength{
+
+.horoscopelength {
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.borderrightSide {
-    border-top: 3px solid #BBBBBB;
-    border-right: 0px;
-    border-left: 0px;
-    border-bottom: 0px;
-    border-style: dotted;
-    /* height: 20px; */
-    width: 115%;
-    position: absolute;
-    top: -12px;
-    left: 13px;
-    margin-bottom: 12px;
-}
-.liveblopos{
+
+.liveblopos {
     position: relative;
     top: 5%;
 }
-.horoscopetitle{
+
+.horoscopetitle {
     font-size: 20px;
     font-weight: bold;
-}t
-.horoscopedescription{
+}
+
+t .horoscopedescription {
     font-family: 'scada';
     font-size: 16px;
     font-weight: 600;
     color: #212529;
 }
+
+@media screen and (min-width: 1281px) {
+    .borderrightSide {
+        border-top: 3px solid #BBBBBB;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 0px;
+        border-style: dotted;
+        /* height: 20px; */
+        width: 115%;
+        position: absolute;
+        top: -12px;
+        left: 13px;
+        margin-bottom: 12px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .sundaymiddayimg-repeat {
         width: 100% !important;
         aspect-ratio: 16 / 9;
         height: 88px !important;
     }
+
     .liveblogmainheadingmobile {
         font-size: 15px;
         line-height: 24px;
         position: relative;
-        top: -2px;
+        /* top: -2px; */
+        left: 4%;
     }
-    .lineclamp10{
+
+    .lineclamp10 {
         display: -webkit-box;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
     .catagoryIcon2 {
         margin-left: 4px;
     }
+
+    .borderrightSide {
+        border-left: 2px solid #E50018;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-top: 0px;
+        border-style: dotted;
+        height: 100%;
+        width: 115%;
+        position: absolute;
+        top: 8px;
+        left: 17px;
+        margin-bottom: 12px;
+    }
+
+    .liveblogclamp {
+        height: 85px !important;
+        -webkit-line-clamp: 3 !important;
+        padding-top: 5px;
+    }
+
+    .liveblogheight {
+        height: 130px !important;
+    }
+
+    .liveblogtextpos {
+        border-bottom: 1px solid #DFDFDF;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .leftinnercolm {
+        display: flex !important;
+    }
+
+    .ctaposition {
+        top: -1px !important;
+    }
 }
+
 /* Upcoming Events */
 .eventhead {
     color: #AF1055;
@@ -362,7 +449,8 @@
     background: #555;
     /* Color when hovering over the scrollbar thumb */
 }
-.liveblogclamp{
+
+.liveblogclamp {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;

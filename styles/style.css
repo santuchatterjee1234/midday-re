@@ -897,9 +897,11 @@
       background-color: #FFFFFF;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     .mobile-sticky.scrolled {
-       top: 0px;
+      top: 0px;
     }
+
     .logo-pos {
       position: relative;
       left: 15%;
@@ -1133,7 +1135,7 @@
     }
 
     .cta-position {
-      width: 21px;
+      width: 18px;
       top: -6px !important;
     }
 
@@ -2293,7 +2295,7 @@
       margin-top: 5px;
     }
 
-    .mobile-border-bottom-pos{
+    .mobile-border-bottom-pos {
       border-bottom: 2px dotted #BFBFBF;
     }
 
@@ -2696,6 +2698,18 @@
   .follow-us-pos {
     position: relative;
     right: 5%;
+  }
+
+  .liveblogheadingpos {
+    display: block;
+    position: relative;
+    bottom: 24px;
+    left: 1%;
+  }
+
+   .main-heading {
+    font-size: 18px;
+    color: #121212;
   }
 
   @media screen and (min-device-width: 280px) and (max-device-width: 768px) {
