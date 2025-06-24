@@ -9,7 +9,7 @@ function LiveBlogs() {
       <section className="liveBlog">
         <div className="container">
           <div className="row">
-            <div className="col-md-9 lhselement">
+            <div className="col-md-8 lhselement">
               <div className={homecss.liveBlogbg} style={{ background: 'none !important' }}>
                 <div className="d-flex justify-content-between align-items-center pb-0 pt-4 tab-header border-bottom mb-3">
                   <div className={`${homecss.leftinnercolm} left-inner-colm pb-0 mb-2 px-md-1 px-0`}>
@@ -143,7 +143,7 @@ function LiveBlogs() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3 rhselement">
+            <div className="col-md-4 rhselement">
               <p className="advertisement-text text-center mt-4 pt-md-4 mb-0">ADVERTISEMENT</p>
               {/* 300*250 Add Start */}
               <div className="add-300x250 mx-auto text-center mb-3"></div>
