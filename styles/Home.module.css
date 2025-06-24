@@ -378,6 +378,9 @@ t .horoscopedescription {
     .ctaposition {
         top: -1px !important;
     }
+    .blogPera{
+        margin-top: 5px !important;    
+    }
 }
 
 /* Upcoming Events */
