@@ -52,7 +52,7 @@ const Horoscope = () => {
                                 className='horoscopeHome'
                                 breakpoints={{
                                     768: {
-                                        slidesPerView: 2,  // For tablets and up
+                                        slidesPerView: 3,  // For tablets and up
                                         spaceBetween: 0
                                     },
                                 }}
