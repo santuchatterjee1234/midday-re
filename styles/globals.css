@@ -691,4 +691,10 @@ audio {
   .horoscope-container {
     padding: 10px !important;
   }
+  .horoscopeHome .swiper-button-prev{
+    top: 60% !important;
+  }
+  .horoscopeHome .swiper-button-next{
+    top: 60% !important;
+  }
 }
