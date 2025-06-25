@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Image from "next/image";
+import aries from "../../public/assets/images/aries.png"
+import taurus from "../../public/assets/images/taurus.png"
+import gemini from "../../public/assets/images/gemini.png"
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -56,30 +59,46 @@ const Horoscope = () => {
                             >
                                 <SwiperSlide>
                                     <div class="horoscope-card">
-                                        <img src="aries_icon.png" alt="Aries" />
-                                        <p>Aries</p>
-                                        <p>Mar 21 - Apr 19</p>
+                                        <Image src={aries} alt='Aries' />
+                                        <div className='horoscope-name'>
+                                            <p>Aries</p>
+                                        </div>
+                                        <div className='horoscope-date-time'>
+                                            <p>Mar 21 - Apr 19</p>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div class="horoscope-card">
-                                        <img src="taurus_icon.png" alt="Taurus" />
-                                        <p>Taurus</p>
-                                        <p>Mar 21 - Apr 19</p>
+                                        <Image src={taurus} alt='Taurus' />
+                                        <div className='horoscope-name'>
+                                            <p>Taurus</p>
+                                        </div>
+                                        <div className='horoscope-date-time'>
+                                            <p>Mar 21 - Apr 19</p>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div class="horoscope-card">
-                                        <img src="gemini_icon.png" alt="Gemini" />
-                                        <p>Gemini</p>
-                                        <p>Mar 21 - Apr 19</p>
+                                        <Image src={gemini} alt='Gemini' />
+                                        <div className='horoscope-name'>
+                                            <p>Gemini</p>
+                                        </div>
+                                        <div className='horoscope-date-time'>
+                                            <p>Mar 21 - Apr 19</p>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div class="horoscope-card">
-                                        <img src="taurus_icon.png" alt="Taurus" />
-                                        <p>Taurus</p>
-                                        <p>Mar 21 - Apr 19</p>
+                                        <Image src={taurus} alt='Taurus' />
+                                        <div className='horoscope-name'>
+                                            <p>Taurus</p>
+                                        </div>
+                                        <div className='horoscope-date-time'>
+                                            <p>Mar 21 - Apr 19</p>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                             </Swiper>
