@@ -1,31 +1,13 @@
-import Horoscope from "../src/components/HoroscopeComponent/index";
-import axios from 'axios';
-import { config } from '../next.config.js';
-const Hooscope = ({ initialHoroscopeData }) => {
-  return(
-    <div className="container">
-      <Horoscope data={initialHoroscopeData}/>
-    </div>
-  );
-};
+import React from 'react'
+import Horoscope from '../src/components/horoscope'
 
-export async function getServerSideProps(context) {
-  try {
-    let formatdata = new FormData();
-    formatdata.append('filter_date', '2024-08-30');
-    const { data: HoroscopeData } = await axios.post(`${config.API_HOST}getHoroscopeListDateWise`, formatdata);
-    return {
-      props: {
-        initialHoroscopeData: HoroscopeData
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return {
-      props: {
-        initialHoroscopeData: [],
-      },
-    };
-  }
+
+function horoscope() {
+  return (
+    <div>
+        <Horoscope/>
+    </div>
+  )
 }
-export default Hooscope;
+
+export default horoscope
