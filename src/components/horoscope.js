@@ -50,6 +50,7 @@ const Horoscope = () => {
                                 breakpoints={{
                                     768: {
                                         slidesPerView: 2,  // For tablets and up
+                                        spaceBetween: 0
                                     },
                                 }}
                             >
