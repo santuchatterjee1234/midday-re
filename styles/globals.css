@@ -638,8 +638,8 @@ audio {
   color: #000 !important;
   background-color: red !important;
   border-radius: 50% !important;
-  width: 20px !important;
-  height: 20px !important;
+  width: 18px !important;
+  height: 18px !important;
   right: 0px !important;
 }
 
@@ -647,8 +647,8 @@ audio {
   color: #000 !important;
   background-color: red !important;
   border-radius: 50% !important;
-  width: 20px !important;
-  height: 20px !important;
+  width: 18px !important;
+  height: 18px !important;
   left: 0px !important;
 }
 
@@ -665,7 +665,7 @@ audio {
 
 .horoscopeHome .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  font-size: 12px;
+  font-size: 10px;
   color: #FFFFFF;
 }
 
@@ -676,7 +676,7 @@ audio {
 
 .horoscopeHome .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  font-size: 12px;
+  font-size: 10px;
   color: #FFFFFF;
 }
 
