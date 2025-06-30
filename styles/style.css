@@ -2179,6 +2179,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    position: absolute;
+    top: 50px;
   }
 
   .shots .slide-link {
@@ -2827,50 +2829,75 @@
 
   /* Different background classes */
   .slide-card.bg-1 {
-    background-color: #fff7ea;
     position: relative;
-    left: 20px;
+    left: 25px;
+    width: 95%;
+    ;
     bottom: 0px;
   }
 
   .slide-card.bg-2 {
-    background-color: #ffe6e9;
     position: relative;
-    bottom: 165px;
-    left: 5px;
+    bottom: 142px;
+    left: 12px;
+    width: 95%;
   }
 
   .slide-card.bg-3 {
-    background-color: #f3f0ff;
     position: relative;
-    bottom: 330px;
-    left: -9px;
+    bottom: 282px;
+    left: -3px;
+    width: 95%;
   }
 
   /* Custom border colors */
   .shots .border-1 {
     border: 2px solid transparent !important;
-    border-color: #ffccd1 !important;
   }
 
   .shots .border-2 {
     border: 2px solid transparent !important;
-    border-color: #ffccd1 !important;
   }
 
   .shots .border-3 {
     border: 2px solid transparent !important;
-    border-color: #b5dbff !important;
+  }
+
+  .pagination-controls.d-flex.justify-content-between.mt-3 {
+    position: relative;
+    bottom: 290px;
+  }
+
+  .continue-app-btn {
+    background: red;
+    border: none;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 230px;
+    left: 30%;
+  }
+
+  .shots-card-position {
+    border: 1px solid #DFDFDF;
+    padding: 10px;
+    border-radius: 10px;
+    height: 328px;
+    width: 32% !important;
   }
 
   @media screen and (min-device-width: 280px) and (max-device-width: 768px) {
     .slide-card.bg-2 {
-      bottom: 106%;
+      bottom: 90%;
     }
 
     .slide-card.bg-3 {
-      bottom: 210%;
+      bottom: 180%;
+    }
+
+    .shots-card-position {
+      width: 100% !important;
     }
   }
-
-  

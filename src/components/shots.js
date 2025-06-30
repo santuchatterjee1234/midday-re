@@ -1,33 +1,34 @@
 import React, { useState, useRef } from 'react';
+import Link from 'next/link';
 
 export default function Shots() {
   const staticLayout = [
-    { className: 'bg-1 layout-1' },
-    { className: 'bg-2 layout-2' },
-    { className: 'bg-3 layout-3' }
+    { className: 'bg-1' },
+    { className: 'bg-2' },
+    { className: 'bg-3' }
   ];
 
   const cardData = [
     {
-      title: 'Sports',
-      content: 'Axar Patel urges Team India to `move on` after IAA World Cup 2023 final defeat. He missed it due to an injury',
-      backgroundColor: '#fff7ea',
-      borderColor: '#ffebca',
-      link: '/sports/axar-patel-reacts-icc-wc-2023-loss',
+      title: 'Lifestyle',
+      content: 'As `bhindi on pizza` goes viral, Indian chefs share recipes for desi pizzas',
+      backgroundColor: '#deefff',
+      borderColor: '#b5dbff',
+      link: '/lifestyle/indian-chefs-share-recipes-for-desi-pizzas',
     },
     {
       title: 'Mumbai',
       content: 'Weekly horoscope: Check astrological predictions for all zodiac signs',
       backgroundColor: '#ffe6e9',
-      borderColor: '#ffd7db',
+      borderColor: '#ffccd1',
       link: '/mumbai/weekly-horoscope-check',
     },
     {
-      title: 'Lifestyle',
-      content: 'As `bhindi on pizza` goes viral, Indian chefs share recipes for desi pizzas',
-      backgroundColor: '#deefff',
-      borderColor: '#d4eaff',
-      link: '/lifestyle/indian-chefs-share-recipes-for-desi-pizzas',
+      title: 'Sports',
+      content: 'Axar Patel urges Team India to `move on` after ICC World Cup 2023 final defeat. He missed it due to an injury',
+      backgroundColor: '#fff7ea',
+      borderColor: '#ffe7bf',
+      link: '/sports/axar-patel-reacts-icc-wc-2023-loss',
     },
   ];
 
@@ -46,29 +47,35 @@ export default function Shots() {
     if (dragStartX.current !== null) {
       const deltaX = x - dragStartX.current;
       if (Math.abs(deltaX) > 50) {
-        if (deltaX < 0) {
-          // Swipe left
-          setRotationIndex((prev) => (prev + 1) % cardData.length);
+        if (deltaX > 1) {
+          goNext();
         } else {
-          // Swipe right
-          setRotationIndex((prev) => (prev - 1 + cardData.length) % cardData.length);
+          goPrevious();
         }
       }
       dragStartX.current = null;
     }
   };
 
+  const goPrevious = () => {
+    setRotationIndex((prev) => (prev - 1 + cardData.length));
+  };
+
+  const goNext = () => {
+    setRotationIndex((prev) => (prev + 2 % cardData.length)); // Go to the next card
+  };
+
   return (
     <div className="shots">
       <div className="container">
-        <div className="row pe-2 pe-md-0">
+        <div className="row ps-md-0 pe-md-0 px-2 my-3">
           <div className="col-md-8"></div>
-          <div className="col-md-4 ps-md-3 pe-md-5 px-4">
+          <div className="col-md-4 ps-md-3 pe-md-4 ps-3 pe-4 shots-card-position">
             <div className="row">
               {staticLayout.map((cardClass, visualIndex) => {
                 const content = getRotatedContent(visualIndex);
                 return (
-                  <div key={visualIndex} className="col-md-12 mb-4">
+                  <div key={visualIndex} className="col-md-12">
                     <div
                       className={`slide-card ${cardClass.className}`}
                       draggable
@@ -84,6 +91,7 @@ export default function Shots() {
                         borderColor: content.borderColor,
                         padding: '20px',
                         borderRadius: '8px',
+                        marginBottom: '10px',
                       }}
                     >
                       <h3 className="slide-title">{content.title}</h3>
@@ -99,6 +107,25 @@ export default function Shots() {
                   </div>
                 );
               })}
+            </div>
+
+            {/* Pagination Controls */}
+            <div className="pagination-controls d-flex justify-content-between mt-3">
+              <button
+                onClick={goPrevious}
+                className="btn btn-outline-primary"
+              >
+                ← Previous
+              </button>
+              <button
+                onClick={goNext}
+                className="btn btn-outline-primary"
+              >
+                Next →
+              </button>
+            </div>
+            <div className="position-relative">
+              <Link href=""><button type="button" className="continue-app-btn">Continue on App</button></Link>
             </div>
           </div>
         </div>
