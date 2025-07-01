@@ -660,7 +660,7 @@ audio {
 .horoscopeHome .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 0px !important;
-  top: 52% !important;
+  top: 45% !important;
 }
 
 .horoscopeHome .swiper-button-prev:after,
@@ -671,7 +671,7 @@ audio {
 
 .horoscopeHome .swiper-button-next {
   left: auto !important;
-  top: 52% !important;
+  top: 45% !important;
 }
 
 .horoscopeHome .swiper-button-next:after,
@@ -701,22 +701,67 @@ audio {
   /* Adjust max-height to show content */
 }
 
+.pin-icon-pos {
+  width: 10%;
+}
+
+.pin-icon-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.pinned-total-pos {
+  position: relative;
+  top: 10px;
+}
+
+.pinned-icon-pos-first {
+  width: 25%;
+}
+
+.pinned-icon-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: red;
+}
 
 @media screen and (max-width: 767px) {
   .horoscope-container {
-    padding: 10px 5px !important;
+    padding: 10px !important;
   }
 
   .horoscopeHome .swiper-button-prev {
-    top: 60% !important;
+    top: 50% !important;
   }
 
   .horoscopeHome .swiper-button-next {
-    top: 60% !important;
+    top: 50% !important;
   }
 
   .horoscope-card img {
     width: 60% !important;
     height: auto !important;
+  }
+
+  .pinned-icon-pos-first {
+    width: 15%;
+  }
+
+  .pinned-total-pos {
+    left: -37px;
+  }
+
+  .pinned-icon-text {
+    font-size: 16px;
+  }
+
+  .pin-icon-pos {
+    width: 7%;
+  }
+  .pin-icon-text{
+    font-size: 16px;
   }
 }

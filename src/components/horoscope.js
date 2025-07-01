@@ -6,6 +6,7 @@ import Image from "next/image";
 import aries from "../../public/assets/images/aries.png"
 import taurus from "../../public/assets/images/taurus.png"
 import gemini from "../../public/assets/images/gemini.png"
+import pin from "../../public/assets/images/pin-icon.png"
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -37,7 +38,7 @@ const Horoscope = () => {
                             <h2>Horoscope</h2>
                         </div>
 
-                        <div className="horoscope-container">
+                        <div className="horoscope-container mb-3">
                             {/* Swiper Container for Zodiac Cards (Slider) */}
                             <Swiper
                                 // install Swiper modules
@@ -66,6 +67,9 @@ const Horoscope = () => {
                                         <div className='horoscope-date-time'>
                                             <p>Mar 21 - Apr 19</p>
                                         </div>
+                                    </div>
+                                    <div className='pinned-total-pos'>
+                                        <Link href=""><p className='mb-0'><Image src={pin} alt="Pinned" className='pinned-icon-pos-first' /><span className='pinned-icon-text'>Pinned</span></p></Link>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
@@ -155,6 +159,9 @@ const Horoscope = () => {
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='mt-3'>
+                                <Link href=""><p className='mb-0'><Image src={pin} alt="Pin this Zodiac" className='pin-icon-pos' /><span className='pin-icon-text'>Pin this Zodiac</span></p></Link>
                             </div>
                         </div>
                     </div>
