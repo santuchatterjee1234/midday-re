@@ -129,14 +129,17 @@ const DesktopHeader = () => {
   };
 
   const handleSearch = (query) => {
-    if (!query.trim()) return;
+    const formattedQuery = query
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '')  // remove special chars
+      .replace(/\s+/g, '-');         // replace spaces with hyphens
 
-    // Option 1: Navigate to a search results page
-    window.location.href = `/search?q=${encodeURIComponent(query)}`;
+    if (!formattedQuery) return;
 
-    // Option 2: If you use internal state or props:
-    // setSearchResults(doSearch(query)); // Custom logic
+    window.location.href = `/search/${formattedQuery}`;
   };
+
 
   return (
     <div className="mainheader">
