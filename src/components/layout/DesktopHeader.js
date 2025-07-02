@@ -104,6 +104,40 @@ const DesktopHeader = () => {
     setIsSearchDropdownVisible(!isSearchDropdownVisible);
   };
 
+  const handleMicrophoneClick = () => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return alert("Speech recognition not supported");
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      const input = document.querySelector(".search-section input");
+
+      if (input) {
+        input.value = transcript;
+
+        // Simulate search behavior
+        handleSearch(transcript); // 👈 This triggers your actual search logic
+      }
+    };
+  };
+
+  const handleSearch = (query) => {
+    if (!query.trim()) return;
+
+    // Option 1: Navigate to a search results page
+    window.location.href = `/search?q=${encodeURIComponent(query)}`;
+
+    // Option 2: If you use internal state or props:
+    // setSearchResults(doSearch(query)); // Custom logic
+  };
+
   return (
     <div className="mainheader">
       <div className="Large-Desktop-only">
@@ -132,9 +166,27 @@ const DesktopHeader = () => {
               <div className="col-3 px-md-3">
                 <div className="search-section d-flex align-items-center border-bottom" onClick={toggleSearchDropdown} style={{ position: 'relative' }}>
                   <FontAwesomeIcon icon={faSearch} className="mr-2 text-muted" />
-                  <input type="text" className="border-0 shadow-none" placeholder="Search" style={{ background: '#F6F6F6', marginLeft: '5px' }} />
-                  <Image src={microphone} alt="Microphone" className="ml-2" style={{ width: '12px', position: 'relative', left: '22px' }} />
-                  {/* Dropdown menu */}
+
+                  <input
+                    type="text"
+                    className="border-0 shadow-none"
+                    placeholder="Search"
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") handleSearch(e.target.value);
+                    }}
+                    style={{ background: '#F6F6F6', marginLeft: '5px' }}
+                  />
+
+                  <Image
+                    src={microphone}
+                    alt="Mic"
+                    style={{ width: "12px", position: "relative", left: "22px", cursor: "pointer" }}
+                    onClick={(e) => {
+                      e.stopPropagation(); // ✅ prevents dropdown from opening
+                      handleMicrophoneClick();
+                    }}
+                  />
+
                   {isSearchDropdownVisible && (
                     <div className="search-dropdown search-dropdown-position">
                       <ul style={{ listStyleType: 'none', margin: '0', padding: '0', overflowY: 'auto', border: 'none' }}>
@@ -143,9 +195,10 @@ const DesktopHeader = () => {
                     </div>
                   )}
                 </div>
+
               </div>
               <div className="col-3">
-                <div className="px-3 col text-dark" style={{ marginTop: "4px", fontSize:'14px' }}>
+                <div className="px-3 col text-dark" style={{ marginTop: "4px", fontSize: '14px' }}>
                   <span>
                     Monday, 13 Jan 2025
                     <br />
@@ -166,10 +219,10 @@ const DesktopHeader = () => {
                   </li>
                   <li className="border-right">
                     <Link href="https://epaper.mid-day.com/">
-                      <p className="mb-0 pl-2 text-danger text-center" style={{fontSize: '12px', fontWeight: 'bold', textDecoration: 'underline'}}>Today's E-Paper</p>
+                      <p className="mb-0 pl-2 text-danger text-center" style={{ fontSize: '12px', fontWeight: 'bold', textDecoration: 'underline' }}>Today's E-Paper</p>
                     </Link>
                   </li>
-                  <li style={{fontSize: '12px'}}>Follow Us:</li>
+                  <li style={{ fontSize: '12px' }}>Follow Us:</li>
                   <li>
                     <Link href="https://www.facebook.com/middayindia">
                       <span className="icon-facebook-logo new-social-size"></span>
@@ -311,7 +364,7 @@ const DesktopHeader = () => {
         </div>
       </div>
       <div className="d-none d-md-block">
-        <TrendingNews/>
+        <TrendingNews />
       </div>
     </div>
   );

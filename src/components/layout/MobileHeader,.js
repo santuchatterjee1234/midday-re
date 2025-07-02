@@ -130,6 +130,39 @@ function MobileHeader() {
     }));
   };
 
+  const handleMicrophoneClick = () => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return alert("Speech recognition not supported");
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.start();
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      const input = document.querySelector(".search-section input");
+
+      if (input) {
+        input.value = transcript;
+
+        // Simulate search behavior
+        handleSearch(transcript); // 👈 This triggers your actual search logic
+      }
+    };
+  };
+
+  const handleSearch = (query) => {
+    if (!query.trim()) return;
+
+    // Option 1: Navigate to a search results page
+    window.location.href = `/search?q=${encodeURIComponent(query)}`;
+
+    // Option 2: If you use internal state or props:
+    // setSearchResults(doSearch(query)); // Custom logic
+  };
   return (
     <div className="container d-block d-md-none">
       <div class="row">
@@ -174,12 +207,15 @@ function MobileHeader() {
                   <FontAwesomeIcon icon={faSearch} className="mr-2 text-muted" />
                   <input type="text" className="border-0 shadow-none" placeholder="Search here" style={{ background: '#F6F6F6', width: '100%' }} />
                   <div>
-                    <Image src={microphone} alt="Microphone" className="ml-2" style={{ width: '15px' }} />
+                    <Image src={microphone} alt="Microphone" onClick={(e) => {
+                      e.stopPropagation(); // ✅ prevents dropdown from opening
+                      handleMicrophoneClick();
+                    }} className="ml-2" style={{ width: '15px' }} />
                   </div>
                   {/* Dropdown menu */}
                   {isSearchDropdownVisible && (
                     <div className="search-dropdown search-dropdown-position">
-                     
+
                     </div>
                   )}
                 </div>
@@ -211,7 +247,7 @@ function MobileHeader() {
                 <span></span>
                 <ul id="menu" className={menuOpen ? "open px-0 px-3" : ""}>
                   <div className="row py-2 px-3 mobile-border-bottom-pos">
-                    <div className="col-6 px-4" style={{paddingTop: '7px'}}>
+                    <div className="col-6 px-4" style={{ paddingTop: '7px' }}>
                       <span className="date-time-day">Monday, 13 Jan 2025<br /></span>
                     </div>
                     <div className="col-6">
