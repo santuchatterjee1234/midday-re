@@ -2865,7 +2865,7 @@
 
   .pagination-controls.d-flex.justify-content-between.mt-3 {
     position: relative;
-    bottom: 290px;
+    bottom: 260px;
   }
 
   .continue-app-btn {
@@ -2884,8 +2884,13 @@
     border: 1px solid #DFDFDF;
     padding: 10px;
     border-radius: 10px;
-    height: 328px;
+    height: 310px;
     width: 32% !important;
+  }
+
+  .pagination-dots.d-flex.justify-content-center.mt-2 {
+    position: relative;
+    bottom: 280px;
   }
 
   @media screen and (min-device-width: 280px) and (max-device-width: 768px) {

@@ -5,7 +5,7 @@ export default function Shots() {
   const staticLayout = [
     { className: 'bg-1' },
     { className: 'bg-2' },
-    { className: 'bg-3' }
+    { className: 'bg-3' },
   ];
 
   const cardData = [
@@ -48,9 +48,9 @@ export default function Shots() {
       const deltaX = x - dragStartX.current;
       if (Math.abs(deltaX) > 50) {
         if (deltaX > 1) {
-          goNext();
-        } else {
           goPrevious();
+        } else {
+          goNext();
         }
       }
       dragStartX.current = null;
@@ -58,11 +58,17 @@ export default function Shots() {
   };
 
   const goPrevious = () => {
-    setRotationIndex((prev) => (prev - 1 + cardData.length));
+    setRotationIndex((prev) =>
+      (prev - 1 + cardData.length) % cardData.length
+    );
   };
 
   const goNext = () => {
-    setRotationIndex((prev) => (prev + 2 % cardData.length)); // Go to the next card
+    setRotationIndex((prev) => (prev + 1) % cardData.length);
+  };
+
+  const goToIndex = (index) => {
+    setRotationIndex(index);
   };
 
   return (
@@ -81,8 +87,12 @@ export default function Shots() {
                       draggable
                       onDragStart={(e) => startSwipe(e.clientX)}
                       onDragEnd={(e) => endSwipe(e.clientX)}
-                      onTouchStart={(e) => startSwipe(e.touches[0].clientX)}
-                      onTouchEnd={(e) => endSwipe(e.changedTouches[0].clientX)}
+                      onTouchStart={(e) =>
+                        startSwipe(e.touches[0].clientX)
+                      }
+                      onTouchEnd={(e) =>
+                        endSwipe(e.changedTouches[0].clientX)
+                      }
                       style={{
                         cursor: 'grab',
                         backgroundColor: content.backgroundColor,
@@ -110,7 +120,7 @@ export default function Shots() {
             </div>
 
             {/* Pagination Controls */}
-            <div className="pagination-controls d-flex justify-content-between mt-3">
+            {/* <div className="pagination-controls d-flex justify-content-between mt-3">
               <button
                 onClick={goPrevious}
                 className="btn btn-outline-primary"
@@ -123,9 +133,37 @@ export default function Shots() {
               >
                 Next →
               </button>
+            </div> */}
+
+            {/* Dynamic Pagination Dots */}
+            <div className="pagination-dots d-flex justify-content-center mt-2">
+              {cardData.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToIndex(index)}
+                  style={{
+                    width: '5px',
+                    height: '5px',
+                    margin: '0 5px',
+                    borderRadius: '50%',
+                    border: 'none',
+                    padding: '4px',
+                    backgroundColor:
+                      rotationIndex % cardData.length === index
+                        ? 'red'
+                        : '#ccc',
+                  }}
+                ></button>
+              ))}
             </div>
-            <div className="position-relative">
-              <Link href=""><button type="button" className="continue-app-btn">Continue on App</button></Link>
+
+            {/* Continue on App */}
+            <div className="position-relative mt-3">
+              <Link href="">
+                <button type="button" className="continue-app-btn">
+                  Continue on App
+                </button>
+              </Link>
             </div>
           </div>
         </div>
