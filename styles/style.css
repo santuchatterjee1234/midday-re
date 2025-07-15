@@ -2876,8 +2876,8 @@
     border-radius: 10px;
     font-size: 18px;
     position: absolute;
-    bottom: 230px;
-    left: 30%;
+    bottom: 240px;
+    left: 26%;
   }
 
   .shots-card-position {
@@ -2888,9 +2888,9 @@
     width: 32% !important;
   }
 
-  .pagination-dots.d-flex.justify-content-center.mt-2 {
+  .pagination-bullets.text-center.my-2 {
     position: relative;
-    bottom: 280px;
+    bottom: 285px;
   }
 
   @media screen and (min-device-width: 280px) and (max-device-width: 768px) {
