@@ -2846,7 +2846,7 @@
   .slide-card.bg-3 {
     position: relative;
     bottom: 288px;
-    left: 1px;
+    left: -1px;
     width: 95%;
   }
 
