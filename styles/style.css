@@ -2838,15 +2838,15 @@
 
   .slide-card.bg-2 {
     position: relative;
-    bottom: 142px;
+    bottom: 145px;
     left: 12px;
     width: 95%;
   }
 
   .slide-card.bg-3 {
     position: relative;
-    bottom: 282px;
-    left: -3px;
+    bottom: 288px;
+    left: 1px;
     width: 95%;
   }
 
