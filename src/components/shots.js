@@ -9,6 +9,7 @@ export default function Shots() {
   ];
 
   const cardData = [
+    
     {
       title: 'Lifestyle',
       content: 'As `bhindi on pizza` goes viral, Indian chefs share recipes for desi pizzas',
@@ -29,7 +30,7 @@ export default function Shots() {
       backgroundColor: '#fff7ea',
       borderColor: '#ffe7bf',
       link: '/sports/axar-patel-reacts-icc-wc-2023-loss',
-    },
+    }
   ];
 
   const [rotationIndex, setRotationIndex] = useState(0);
@@ -58,11 +59,11 @@ export default function Shots() {
   };
 
   const goPrevious = () => {
-    setRotationIndex((prev) => (prev - 1 + cardData.length));
+    setRotationIndex((prev) => (prev + 1 + cardData.length));
   };
 
   const goNext = () => {
-    setRotationIndex((prev) => (prev + 2 % cardData.length)); // Go to the next card
+    setRotationIndex((prev) => (prev + 1 % cardData.length)); // Go to the next card
   };
 
   return (
@@ -121,7 +122,7 @@ export default function Shots() {
                 onClick={goNext}
                 className="btn btn-outline-primary"
               >
-                Next →
+                Next → 
               </button>
             </div> */}
             <div className="pagination-bullets text-center my-2">
