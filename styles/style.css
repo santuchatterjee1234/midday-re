@@ -2621,6 +2621,7 @@
     font-size: 14px;
     text-decoration: none;
     color: #121212;
+    z-index: 9999999999 !important;
   }
 
   .footer-bottom {
@@ -2714,6 +2715,7 @@
     font-size: 18px;
     color: #121212;
   }
+  
 
   @media screen and (min-device-width: 280px) and (max-device-width: 768px) {
     .footer-container {
