@@ -360,8 +360,8 @@ function MobileHeader() {
                           )}
                       </li>
                     ))}
-                  <div className="row my-3">
-                    <div className="col-12 text-center">
+                  <div className="row my-3 justify-content-center">
+                    <div className="col-12 text-center px-0">
                       <div className="border-top border-bottom py-3">
                         <div className="never-miss-headline">
                           <p>Never Miss a Headline!</p>
@@ -372,27 +372,27 @@ function MobileHeader() {
                       </div>
                     </div>
                   </div>
-                  <div className="row mb-3">
-                    <div className="col-12 text-center">
+                  <div className="row mb-3 justify-content-center">
+                    <div className="col-12 text-center px-0">
                       <ul className="social-icons-inline inline-menu d-inline-block pt-md-1">
                         <li><span className="follow-us-position">Follow Us:</span></li>
-                        <li>
+                        <li className="social-icon-margin-left">
                           <Link href="https://www.facebook.com/middayindia">
                             <span className="icon-facebook-logo new-social-size"></span>
                           </Link>
                         </li>
-                        <li>
+                        <li className="social-icon-margin-left">
                           <Link href="https://www.instagram.com/middayindia">
                             <span className="icon-instagram new-social-size"></span>
                           </Link>
                         </li>
-                        <li>
+                        <li className="social-icon-margin-left">
                           <Link href="https://twitter.com/mid_day">
                             <img src="https://www.mid-day.com/assets/images/twitter-new-icon.png" alt="Twitter"
                               className="new-twitter-size-black" />
                           </Link>
                         </li>
-                        <li>
+                        <li className="social-icon-margin-left">
                           <Link href="https://www.youtube.com/c/middayindia">
                             <span className="icon-youtube new-social-size pe-1"></span>
                           </Link>
