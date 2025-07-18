@@ -249,7 +249,7 @@ function MobileHeader() {
                 <span></span>
                 <span></span>
                 <ul id="menu" className={menuOpen ? "open px-0 px-3" : ""}>
-                  <div className="row py-2 px-3 mobile-border-bottom-pos">
+                  <div className="row py-2 px-3 mx-2 mobile-border-bottom-pos">
                     <div className="col-6 px-4" style={{ paddingTop: '7px' }}>
                       <span className="date-time-day">Monday, 13 Jan 2025<br /></span>
                     </div>
@@ -266,7 +266,7 @@ function MobileHeader() {
                       </div>
                     </div>
                   </div>
-                  <div className="row py-2 px-5 justify-content-center border-bottom">
+                  <div className="row py-2 px-5 mx-2 justify-content-center border-bottom">
                     <div className="col text-center">
                       <Link href="" style={{ fontSize: '12px', color: '#14263D !important', textDecoration: 'underline !important' }}>Mid-day Gujarati</Link>
                     </div>
@@ -334,7 +334,7 @@ function MobileHeader() {
                           )}
                         {menuDataitem.sub_menu &&
                           menuDataitem.sub_menu.length > 0 && (
-                            <ul
+                            <ul className="px-2 mobile-submenus-position"
                               style={{
                                 display: menuDropdownOpen[
                                   menuDataitem.burger_menu_master_url
@@ -349,12 +349,8 @@ function MobileHeader() {
                                     key={subIndex}
                                     href={submenuitem.burger_menu_child_master_url}
                                   >
-                                    <li className="mx-0">
-                                      <Image
-                                        src={line}
-                                        style={{ width: "3%" }}
-                                        className="me-1"
-                                      />
+                                    <li className="mx-0 submenus">
+                                      
                                       {submenuitem.burger_menu_child_master_title}
                                     </li>
                                   </Link>
@@ -379,7 +375,7 @@ function MobileHeader() {
                   <div className="row mb-3">
                     <div className="col-12 text-center">
                       <ul className="social-icons-inline inline-menu d-inline-block pt-md-1">
-                        <li>Follow Us:</li>
+                        <li><span className="follow-us-position">Follow Us:</span></li>
                         <li>
                           <Link href="https://www.facebook.com/middayindia">
                             <span className="icon-facebook-logo new-social-size"></span>
@@ -416,7 +412,7 @@ function MobileHeader() {
           >
             <div style={{ background: "#F5F5F5 !important" }}>
               <div className="row">
-                <div className="col-12 px-0">
+                <div className="col-12 px-4">
                   <TrendingNews />
                 </div>
               </div>
