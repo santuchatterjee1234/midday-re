@@ -434,7 +434,7 @@ function MobileHeader() {
           <Link href=""><Image src={video} alt="Videos" className="mobile-footer-icon" /></Link>
         </div>
         <div className="col text-center px-0">
-          <Link href=""><Image src={shots} alt="Shots" className="mobile-footer-icon" /></Link>
+          <Link href=""><Image src={shots} alt="Shots" className="mobile-footer-icon" /></Link> 
         </div>
       </div>
     </div>
