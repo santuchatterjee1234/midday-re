@@ -3,7 +3,7 @@
   @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
   /* ADS CODE */
-  /* .rw_left_sticky {
+  .rw_left_sticky {
     position: fixed;
     top: 5px;
     z-index: 99999;
@@ -21,7 +21,7 @@
     height: 600px;
     background-color: red;
     right: 0px;
-  } */
+  }
 
   body {
     font-family: 'Merriweather' !important;
