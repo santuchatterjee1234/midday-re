@@ -466,17 +466,20 @@
   }
 
   @media screen and (max-width: 767px) {
-    .follow-us-position{
+    .follow-us-position {
       font-size: 12px !important;
       font-weight: 500 !important;
       color: #000000 !important;
     }
+
     .socialIconRhs {
       float: right !important;
     }
 
     .mobile-footer-icon {
-      height: 60px !important;
+      height: 100% !important;
+      width: 100%;
+      padding: 10px 0px;
     }
   }
 
