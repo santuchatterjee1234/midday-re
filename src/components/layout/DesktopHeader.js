@@ -372,5 +372,4 @@ const DesktopHeader = () => {
     </div>
   );
 };
-
 export default DesktopHeader;
