@@ -15,13 +15,13 @@ const Footer = () => {
         <div className="footer-container">
           {/* Left Section */}
           <div className="footer-left text-center py-2">
-            <div className="footer-logo">
+            <div className="footer-logo mx-auto">
               <img src="https://www.mid-day.com/assets/images/logo.png" alt="Mid-Day" />
             </div>
             <p className="footer-feedback-pos">Kindly mail us your feedback</p>
             <button className="feedback-btn">Write Your Feedback</button>
             <div>
-              <ul className="my-2 follow-us-pos">
+              <ul className="my-2 follow-us-pos px-0">
                 <li className="footer-social-li">Follow Us:</li>
               </ul>
             </div>

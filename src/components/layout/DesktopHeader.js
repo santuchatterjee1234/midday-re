@@ -183,7 +183,7 @@ const DesktopHeader = () => {
                   <Image
                     src={microphone}
                     alt="Mic"
-                    style={{ width: "12px", position: "relative", left: "22px", cursor: "pointer" }}
+                    style={{ width: "12px", position: "relative", left: "8px", cursor: "pointer" }}
                     onClick={(e) => {
                       e.stopPropagation(); // ✅ prevents dropdown from opening
                       handleMicrophoneClick();
@@ -278,11 +278,11 @@ const DesktopHeader = () => {
                     <div className="weather-widget d-flex align-items-center">
                       <div className="location d-flex align-items-center">
                         <Image src={maps} alt="Location" className="me-2" style={{ width: '16px' }} />
-                        <span className="me-2" style={{ fontSize: '18px', color: '#595959' }}>{weather ? weather.name : "Mumbai"}</span>
+                        <span className="me-2" style={{ fontSize: '16px', color: '#595959', position: 'relative', top: '2px', left: '-4px' }}>{weather ? weather.name : "Mumbai"}</span>
                       </div>
                       <div className="weather-info d-flex align-items-center">
-                        <Image src={sun} alt="Weather Icon" className="me-2" style={{ width: '30px' }} />
-                        <span style={{ fontSize: '21px', color: '#595959', fontWeight: 'bold' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
+                        <Image src={sun} alt="Weather Icon" className="me-2" style={{ width: '30px', position: 'relative', left: '-8px' }} />
+                        <span style={{ fontSize: '18px', color: '#595959', fontWeight: 'bold', position: 'relative', left: '-12px' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
                       </div>
                     </div>
                   </div>

@@ -249,7 +249,7 @@ function MobileHeader() {
                 <span></span>
                 <span></span>
                 <ul id="menu" className={menuOpen ? "open px-0 px-3" : ""}>
-                  <div className="row py-2 px-3 mx-2 mobile-border-bottom-pos">
+                  <div className="row py-2 mobile-border-bottom-pos">
                     <div className="col-6 px-4" style={{ paddingTop: '7px' }}>
                       <span className="date-time-day">Monday, 13 Jan 2025<br /></span>
                     </div>
@@ -257,16 +257,16 @@ function MobileHeader() {
                       <div className="weather-widget d-flex align-items-center" style={{ marginTop: '1px' }}>
                         <div className="location d-flex align-items-center">
                           <Image src={maps} alt="Location" className="me-2" style={{ width: '15px', position: 'relative', top: '2px' }} />
-                          <span className="me-2" style={{ fontSize: '14px', left: '-4px !important', top: '-4px !important', color: '#595959', background: '#FFFFFF' }}>{weather ? weather.name : "Mumbai"}</span>
+                          <span className="me-2" style={{ fontSize: '12px', left: '-4px !important', top: '-3px !important', color: '#595959', background: '#FFFFFF' }}>{weather ? weather.name : "Mumbai"}</span>
                         </div>
                         <div className="weather-info d-flex align-items-center">
                           <Image src={sun} alt="Weather Icon" className="me-2" style={{ width: '30px', position: 'relative', left: '12px', top: '3px' }} />
-                          <span style={{ fontSize: '18px', left: '10px !important', top: '-7px !important', color: '#595959', background: '#FFFFFF', fontWeight: 'bold' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
+                          <span style={{ fontSize: '16px', left: '8px !important', top: '-6px !important', color: '#595959', background: '#FFFFFF', fontWeight: 'bold' }}>{weather ? `${weather.main.temp}°C` : "31°C"}</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="row py-2 px-5 mx-2 justify-content-center border-bottom">
+                  <div className="row py-2 px-3 justify-content-center border-bottom">
                     <div className="col text-center">
                       <Link href="" style={{ fontSize: '12px', color: '#14263D !important', textDecoration: 'underline !important' }}>Mid-day Gujarati</Link>
                     </div>
@@ -412,7 +412,7 @@ function MobileHeader() {
           >
             <div style={{ background: "#F5F5F5 !important" }}>
               <div className="row">
-                <div className="col-12 px-4">
+                <div className="col-12">
                   <TrendingNews />
                 </div>
               </div>

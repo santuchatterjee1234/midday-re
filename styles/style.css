@@ -1,11 +1,13 @@
   /*! CSS Used from: https://www.mid-day.com/assets/css/bootstrap.min.css?v=1.0 */
 
+  @import url('https://fonts.googleapis.com/css?family=Merriweather');
+
   /* ADS CODE */
   .rw_left_sticky {
     position: fixed;
     top: 5px;
     z-index: 99999;
-    width: 120px;
+    min-width: 120px;
     height: 600px;
     background-color: red;
     left: 0px;
@@ -15,13 +17,11 @@
     position: fixed;
     top: 5px;
     z-index: 99999;
-    width: 120px;
+    min-width: 120px;
     height: 600px;
     background-color: red;
     right: 0px;
   }
-
-  @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
   body {
     font-family: 'Merriweather' !important;
@@ -45,7 +45,7 @@
     color: #ee1d23 !important;
     position: absolute;
     left: -15px;
-    top: 4px;
+    top: 6px;
   }
 
   .home-icon {
@@ -296,7 +296,7 @@
     display: ruby !important;
     padding-block: 5px !important;
     color: #2B2B2B !important;
-    font-size: 14px !important;
+    font-size: 12px !important;
     font-weight: 500 !important;
     margin-left: 4px !important;
   }
@@ -480,6 +480,28 @@
       height: 100% !important;
       width: 50%;
       padding: 0px;
+    }
+
+    .footer-middle h3 {
+      font-size: 14px !important;
+      height: 17px !important;
+    }
+
+    .footer-right h3 {
+      font-size: 14px !important;
+      height: 17px !important;
+    }
+
+    .footer-column {
+      font-size: 12px;
+    }
+
+    .footer-feedback-pos {
+      font-size: 14px !important;
+    }
+
+    .feedback-btn {
+      font-size: 12px !important;
     }
   }
 
@@ -715,6 +737,10 @@
 
 
   @media screen and (max-width: 767px) {
+    #menu .social-icon-margin-left {
+      margin-left: 10px !important;
+    }
+
     #menuToggle {
       display: block;
       position: relative;
@@ -914,8 +940,8 @@
 
     .logo-pos {
       position: relative;
-      left: 15%;
-      top: 0px;
+      left: 20%;
+      top: -2px;
       z-index: 1111;
     }
 
@@ -2306,9 +2332,7 @@
       padding: 5px 15px;
       width: auto;
     }
-    .social-icon-margin-left{
-      margin-left: 10px !important;
-    }
+
     .never-miss-headline {
       font-size: 14px;
       font-weight: bold;
@@ -2568,8 +2592,6 @@
 
   .footer-logo {
     width: 50%;
-    position: relative;
-    left: 29%;
   }
 
   .footer-feedback-pos {
@@ -2577,7 +2599,6 @@
     color: #000000;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 25px;
   }
 
   .footer-container {
@@ -2592,7 +2613,7 @@
     flex: 1;
     margin-right: 20px;
     border-right: 1px solid #ddd;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 
   .footer-middle {
@@ -2600,7 +2621,7 @@
     margin-right: 20px;
     border-right: 1px solid #ddd;
     padding-left: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 
   .footer-right {
@@ -2622,7 +2643,6 @@
     font-size: 14px;
     font-weight: bold;
     padding: 8px 18px;
-    margin-left: 33px;
   }
 
   .feedback-btn:hover {
@@ -2633,7 +2653,6 @@
     display: flex;
     margin-top: 10px;
     gap: 16px;
-    margin-left: 50px;
   }
 
   .footer-middle ul,
@@ -2705,7 +2724,7 @@
     font-weight: bold;
     border-left: 3px solid red;
     margin-left: -15px;
-    padding: 0px 4px;
+    padding: 0px 6px;
   }
 
   .footer-right h3 {
@@ -2713,7 +2732,7 @@
     font-weight: bold;
     border-left: 3px solid red;
     margin-left: -15px;
-    padding: 0px 4px;
+    padding: 0px 6px;
   }
 
   .footer-column Link {
@@ -2727,11 +2746,6 @@
 
   .footer-social-li {
     list-style-type: none !important;
-  }
-
-  .follow-us-pos {
-    position: relative;
-    right: 6px;
   }
 
   .liveblogheadingpos {
@@ -2760,7 +2774,6 @@
       margin-right: 0px;
       border-right: none;
       border-bottom: 1px solid #DFDFDF;
-      padding: 10px;
     }
 
     .footer-middle {
@@ -2774,20 +2787,10 @@
 
     .social-icons {
       margin-bottom: 10px;
-      margin-left: 20px;
     }
 
     .follow-us-pos {
       font-size: 15px;
-      right: 2%;
-    }
-
-    .footer-feedback-pos {
-      margin-left: 2px;
-    }
-
-    .feedback-btn {
-      margin-left: 10px;
     }
 
     .user-icon-mobile-pos {
