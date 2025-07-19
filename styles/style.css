@@ -786,9 +786,9 @@
 
 
   @media screen and (max-width: 767px) {
-    #menu .social-icon-margin-left {
+    /* #menu .social-icon-margin-left {
       margin-left: 10px !important;
-    }
+    } */
 
     #menuToggle {
       display: block;
