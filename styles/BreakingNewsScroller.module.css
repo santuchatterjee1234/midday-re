@@ -114,6 +114,8 @@
 
     .scrollerpadding {
         padding: 0px 0px 0px 15px;
+        width: 94%;
+        margin-left: 10px;
     }
 
     .newsItem {
