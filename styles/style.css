@@ -2701,6 +2701,7 @@
   .social-icons {
     display: flex;
     margin-top: 10px;
+    margin-left: 10px;
     gap: 16px;
   }
 
@@ -2836,7 +2837,6 @@
 
     .social-icons {
       margin-bottom: 10px;
-      margin-left: 10px;
     }
 
     .follow-us-pos {
