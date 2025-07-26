@@ -2862,6 +2862,8 @@
 
     .social-icons-inline.inline-menu li {
       padding: 0px !important;
+      position: relative;
+      left: -1px;
     }
   }
 
