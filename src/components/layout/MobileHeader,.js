@@ -410,7 +410,7 @@ function MobileHeader() {
             className="bg-grey text-mid-header sticky"
             style={{ marginTop: "0px" }}
           >
-            <div style={{ background: "#F5F5F5 !important" }}>
+            <div style={{ background: "#FFFFFF !important" }}>
               <div className="row">
                 <div className="col-12">
                   <TrendingNews />

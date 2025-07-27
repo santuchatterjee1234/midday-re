@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Section */}
-        <div className="footer-bottom">
+        <div className="footer-bottom pb-md-0 pb-4">
           <p>Copyright © 2025 <Link href="" style={{ color: '#0055A5 !important' }}>Mid-Day Infomedia Ltd.</Link> All Rights Reserved.</p>
         </div>
       </div>
